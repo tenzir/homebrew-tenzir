@@ -9,6 +9,10 @@ cask "tenzir" do
   desc "Security telemetry pipelines for security teams"
   homepage "https://github.com/tenzir/tenzir"
 
+  livecheck do
+    skip "Managed by tenzir/tenzir release automation."
+  end
+
   depends_on arch: :arm64
 
   pkg "tenzir-#{version}-#{arch}-darwin-static.pkg"
