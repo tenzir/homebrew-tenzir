@@ -6,7 +6,7 @@ cask "tenzir" do
 
   url "https://github.com/tenzir/tenzir/releases/download/v#{version}/tenzir-#{version}-#{arch}-darwin-static.pkg"
   name "Tenzir"
-  desc "Security telemetry pipelines for security teams"
+  desc "Data pipelines for security teams"
   homepage "https://github.com/tenzir/tenzir"
 
   livecheck do
