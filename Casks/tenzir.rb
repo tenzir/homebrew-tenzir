@@ -1,6 +1,6 @@
 cask "tenzir" do
-  version "5.28.0"
-  sha256 "54c1c6989c1a8fd68de74a3c8fcd9eb27e2d2bb6090b35961844ebd9eac0a0ff"
+  version "5.29.2"
+  sha256 "8e7eeee62310fe57427fe11ce72047a255a1067c8b0894feabf576e7f54b4b77"
 
   arch arm: "arm64"
 
@@ -17,7 +17,5 @@ cask "tenzir" do
 
   pkg "tenzir-#{version}-#{arch}-darwin-static.pkg"
 
-  # Keep the currently shipped pkgutil identifier until the companion
-  # tenzir/tenzir PR switches the package metadata and release automation.
-  uninstall pkgutil: "com.Tenzir.Tenzir.Runtime"
+  uninstall pkgutil: "com.tenzir.tenzir.runtime"
 end
