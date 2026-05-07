@@ -1,6 +1,6 @@
 cask "tenzir" do
-  version "5.35.2"
-  sha256 "2adcd52c8f4a94886ddd0a0dd8d8ea9daaa6cf53de77a5d4633a6fe958535d7e"
+  version "5.36.0"
+  sha256 "0db05fc9aa45bcdf5bc9afb0bdb784dd7b39209107a06314f7c2b9c761b491b7"
 
   arch arm: "arm64"
 
