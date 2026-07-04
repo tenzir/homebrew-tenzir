@@ -16,5 +16,7 @@ jobs:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8  # v5.0.0
       - name: Tap local checkout
         run: brew tap --custom-remote tenzir/homebrew-tenzir "$GITHUB_WORKSPACE"
+      - name: Trust local tap
+        run: brew trust --tap tenzir/homebrew-tenzir
       - name: Audit cask
         run: brew audit --cask --online --strict --tap=tenzir/homebrew-tenzir tenzir
