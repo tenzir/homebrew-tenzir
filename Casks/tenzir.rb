@@ -16,6 +16,7 @@ cask "tenzir" do
   depends_on arch: :arm64
 
   pkg "tenzir-#{version}-#{arch}-darwin-static.pkg"
+  binary "/opt/tenzir/bin/tenzir"
 
   uninstall pkgutil: "com.tenzir.tenzir.runtime"
 end
