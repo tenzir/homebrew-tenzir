@@ -14,9 +14,7 @@ cask "tenzir" do
   end
 
   depends_on arch: :arm64
-
-  # Older Homebrew versions implicitly restrict casks to macOS.
-  depends_on :macos if Gem::Version.new(HOMEBREW_VERSION) >= Gem::Version.new("6.0.0")
+  depends_on :macos
 
   pkg "tenzir-#{version}-#{arch}-darwin-static.pkg"
   binary "/opt/tenzir/bin/tenzir"
