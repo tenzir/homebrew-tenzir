@@ -1,8 +1,8 @@
 cask "tenzir" do
   arch arm: "arm64"
 
-  version "6.22.0"
-  sha256 "8c9b533f90037864a010e5440e0601c9cb07a71df07966ca87576a74defc97ea"
+  version "6.23.0"
+  sha256 "91de238b46c4b3902b9617e505b84fbb07a5fbaa7a90d60cb328b2909ec825a9"
 
   url "https://github.com/tenzir/tenzir/releases/download/v#{version}/tenzir-#{version}-#{arch}-darwin-static.pkg"
   name "Tenzir"
